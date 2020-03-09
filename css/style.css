@@ -493,17 +493,17 @@ ul, ol {
 	color: #19191a;
 	margin-bottom: 36px;
 }
-.booking-form form .check-date {
+.booking-form form .check-form {
 	position: relative;
 	margin-bottom: 15px;
 }
-.booking-form form .check-date label {
+.booking-form form .check-form label {
 	font-size: 14px;
 	color: #707079;
 	display: block;
 	margin-bottom: 10px;
 }
-.booking-form form .check-date input {
+.booking-form form .check-form input {
 	width: 100%;
 	height: 50px;
 	border: 1px solid #ebebeb;
@@ -514,7 +514,7 @@ ul, ol {
 	font-weight: 500;
 	padding-left: 20px;
 }
-.booking-form form .check-date i {
+.booking-form form .check-form i {
 	color: #dfa974;
 	position: absolute;
 	right: 18px;
@@ -1406,17 +1406,17 @@ ul, ol {
 	color: #19191a;
 	margin-bottom: 30px;
 }
-.room-booking form .check-date {
+.room-booking form .check-form {
 	position: relative;
 	margin-bottom: 15px;
 }
-.room-booking form .check-date label {
+.room-booking form .check-form label {
 	font-size: 14px;
 	color: #707079;
 	display: block;
 	margin-bottom: 10px;
 }
-.room-booking form .check-date input {
+.room-booking form .check-form input {
 	width: 100%;
 	height: 50px;
 	border: 1px solid #ebebeb;
@@ -1427,7 +1427,7 @@ ul, ol {
 	font-weight: 500;
 	padding-left: 20px;
 }
-.room-booking form .check-date i {
+.room-booking form .check-form i {
 	color: #dfa974;
 	position: absolute;
 	right: 18px;

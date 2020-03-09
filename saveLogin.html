@@ -3,37 +3,23 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/ico" href="img/logo.png" />
+<!-- Css Styles -->
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+<link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+<link rel="stylesheet" href="css/flaticon.css" type="text/css">
+<link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+<link rel="stylesheet" href="css/nice-select.css" type="text/css">
+<link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+<link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+<link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+<link rel="stylesheet" href="css/style.css" type="text/css">
 <style>
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-/* style the container */
-.container {
-  position: relative;
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px 0 30px 0;
-} 
-
-/* style inputs and link buttons */
-input,
-.btn {
-  width: 100%;
-  padding: 12px;
-  border: none;
-  border-radius: 4px;
-  margin: 5px 0;
-  opacity: 0.85;
-  display: inline-block;
-  font-size: 17px;
-  line-height: 20px;
-  text-decoration: none; /* remove underline from anchors */
-}
 
 input:hover,
 .btn:hover {
@@ -44,100 +30,44 @@ input:hover,
 .fb {
   background-color: #3B5998;
   color: white;
+  width: auto;
+  border: 1px solid #dfa974;
+  border-radius: 2px;
+  height: 46px;
 }
 
 .twitter {
   background-color: #55ACEE;
   color: white;
+  width: auto;
+  border: 1px solid #dfa974;
+  border-radius: 2px;
+  height: 46px;
 }
 
-.google {
-  background-color: #dd4b39;
+.linkedin {
+  background-color: #7f39db;
   color: white;
+  width: auto;
+  border: 1px solid #dfa974;
+  border-radius: 2px;
+  height: 46px;
 }
-
-/* style the submit button */
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-/* Two-column layout */
-.col {
-  float: left;
-  width: 50%;
-  margin: auto;
-  padding: 0 50px;
-  margin-top: 6px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* vertical line */
-.vl {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  border: 2px solid #ddd;
-  height: 175px;
-}
-
-/* text inside the vertical line */
-.vl-innertext {
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #f1f1f1;
-  border: 1px solid #ccc;
-  border-radius: 50%;
-  padding: 8px 10px;
-}
-
-/* hide some text on medium and large screens */
-.hide-md-lg {
-  display: none;
-}
-.bottom-container {
+.col{
+  padding: 10px;
   text-align: center;
-  background-color: #666;
-  border-radius: 0px 0px 4px 4px;
-}
-@media screen and (max-width: 650px) {
-  .col {
-    width: 100%;
-    margin-top: 0;
-  }
-  .vl {
-    display: none;
-  }
-  .hide-md-lg {
-    display: block;
-    text-align: center;
-  }
+  width: 100%;
 }
 </style>
 </head>
 <body>
+  <!-- Page Preloder -->
+  <div id="preloder">
+    <div class="loader"></div>
+</div>
+<!--
 
-<div class="container">
-  <form action="">
-    <div class="row">
-      <h2 style="text-align:center">Login with Social Media or Manually</h2>
-      <div class="vl">
-        <span class="vl-innertext">or</span>
-      </div>
-
-      <div class="col">
+  <div class="col">
         <a href="#" class="fb btn">
           <i class="fa fa-facebook fa-fw"></i> Login with Facebook
          </a>
@@ -149,30 +79,69 @@ input[type=submit]:hover {
         </a>
       </div>
 
-      <div class="col">
-        <div class="hide-md-lg">
-          <p>Or sign in manually:</p>
-        </div>
+-->
 
-        <input type="text" name="username" placeholder="Username" required>
-        <input type="password" name="password" placeholder="Password" required>
-        <input type="submit" value="Login">
+    <!-- Hero Section Begin -->
+    <section class="hero-section">
+      <div class="container">
+          <div class="row"><div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                  <div class="booking-form" style="border: 1px solid #dfa974;border-radius: 2px;">
+                    <h3 style="font-size: 24px;
+                              text-transform: uppercase;
+                              color: #dfa974;
+                              text-align: center;
+                              text-decoration: underline;">Sign up</h3>
+                      <form action="#">
+                          <div class="check-form">
+                              <label for="fullname">Full name:</label>
+                              <input type="text" name="fullname" id="">
+                              <i class="email"></i>
+                          </div>
+                          <div class="check-form">
+                              <label for="email">Email:</label>
+                              <input type="text" class="date-input" id="date-out">
+                              <span><i class="icon-envelope"></i></span>
+                          </div>
+                          <div class="select-option">
+                              <label for="gender">Gender:</label>
+                              <select id="gender">
+                                <option value=""></option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                              </select>
+                          </div>
+                          <button type="submit">Sign up</button>
+                      </form><br>
+                      <div class="col">
+                        <a href="#" class="fb btn">
+                          <i class="fa fa-facebook fa-fw"></i>Login with Facebook
+                         </a>
+                        <a href="#" class="twitter btn">
+                          <i class="fa fa-twitter fa-fw"></i>Login with Twitter
+                        </a>
+                        <a href="#" class="linkedin btn"><i class="fa fa-linkedin fa-fw">
+                          </i>Login with Linkedin
+                        </a>
+                        <p>Login manualy</p>
+                      </div>
+                  </div>
+              </div><div class="col-sm-3"></div>
+          </div>
       </div>
-      
-    </div>
-  </form>
-</div>
+  </section>
+  <!-- Hero Section End -->
 
-<div class="bottom-container">
-  <div class="row">
-    <div class="col">
-      <a href="#" style="color:white" class="btn">Sign up</a>
-    </div>||
-    <div class="col">
-      <a href="#" style="color:white" class="btn">Forgot password?</a>
-    </div>
-  </div>
-</div>
 
+
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
