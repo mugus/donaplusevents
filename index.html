@@ -33,7 +33,7 @@
             <i class="icon_close"></i>
         </div>
         <div class="header-configure-area">
-            <a href="#" class="bk-btn">Saved-Dates</a>
+            <a href="#" data-toggle="modal" data-target="#myModal" class="bk-btn">Saved-Dates</a>
         </div>
         <nav class="mainmenu mobile-menu">
             <ul>
@@ -113,7 +113,7 @@
                                 <a href="#"><i class="fa fa-instagram"></i></a>
                                 <a href="#"><i class="fa fa-linkedin"></i></a>
                             </div>
-                            <a href="#" class="bk-btn">Saved-Dates</a>
+                            <a href="#" data-toggle="modal" data-target="#myModal" class="bk-btn">Saved-Dates</a>
                         </div>
                     </div>
                 </div>
@@ -183,6 +183,65 @@
         </div>
     </header>
     <!--EndHeader-->
+    <!--Modal-->
+    <div class="container">
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content" style="border: 1px solid #dfa974;border-radius: 2px;">
+              <div class="modal-header">
+                <h3 style="font-size: 24px;text-transform: uppercase;color: #dfa974;">Sign up</h3>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                
+              </div>
+              <div class="modal-body">
+                <div class="booking-form">
+                      <form action="#">
+                          <div class="check-form">
+                              <label for="fullname">Full name:</label>
+                              <input type="text" name="fullname" id="">
+                              <i class="email"></i>
+                          </div>
+                          <div class="check-form">
+                              <label for="email">Email:</label>
+                              <input type="text" name=mail id="">
+                              <span><i class="icon-envelope"></i></span>
+                          </div>
+                          <div class="select-option">
+                              <label for="gender">Gender:</label>
+                              <select id="gender">
+                                <option value=""></option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                              </select>
+                          </div>
+                          <button type="submit">Sign up</button>
+                      </form><br>
+                      <div class="col">
+                        <a href="#" class="fb btn">
+                          <i class="fa fa-facebook fa-fw"></i>Login with Facebook
+                         </a>
+                        <a href="#" class="twitter btn">
+                          <i class="fa fa-twitter fa-fw"></i>Login with Twitter
+                        </a>
+                        <a href="#" class="linkedin btn"><i class="fa fa-linkedin fa-fw">
+                          </i>Login with Linkedin
+                        </a>
+                        <p>Login manualy</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+    <!--EndModal-->
 
     <!-- Section Begin -->
     <section class="hero-section">
@@ -398,7 +457,50 @@
     </div>
 </footer>
 <!-- Footer Section End -->
-
+<style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    
+    input:hover,
+    .btn:hover {
+      opacity: 1;
+    }
+    
+    /* add appropriate colors to fb, twitter and google buttons */
+    .fb {
+      background-color: #3B5998;
+      color: white;
+      width: auto;
+      border: 1px solid #dfa974;
+      border-radius: 2px;
+      height: 46px;
+    }
+    
+    .twitter {
+      background-color: #55ACEE;
+      color: white;
+      width: auto;
+      border: 1px solid #dfa974;
+      border-radius: 2px;
+      height: 46px;
+    }
+    
+    .linkedin {
+      background-color: #7f39db;
+      color: white;
+      width: auto;
+      border: 1px solid #dfa974;
+      border-radius: 2px;
+      height: 46px;
+    }
+    .col{
+      padding: 10px;
+      text-align: center;
+      width: 100%;
+    }
+    </style>
 
 
 <script src="js/jquery-3.3.1.min.js"></script>
